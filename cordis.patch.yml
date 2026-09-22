@@ -3,7 +3,8 @@
       name: dsh-wsl-ollama
       config:
         enabled: true
-        baseUrl: "http://127.0.0.1:11434"
+        # empty => auto (WSL uses Windows host from /etc/resolv.conf)
+        baseUrl: ""
         defaultModel: ""
         timeoutMs: 120000
         maxPromptChars: 32000
