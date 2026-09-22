@@ -9,7 +9,7 @@ export function apply(ctx, config = {}) {
     return;
   }
   const client = createOllamaClient({
-    baseUrl: config.baseUrl || process.env.DSH_OLLAMA_BASE || process.env.OLLAMA_HOST || "http://127.0.0.1:11434",
+    baseUrl: config.baseUrl || undefined,
     defaultModel: config.defaultModel || process.env.DSH_OLLAMA_MODEL || "",
     timeoutMs: positive(config.timeoutMs, 120_000),
     maxPromptChars: positive(config.maxPromptChars, 32_000),
