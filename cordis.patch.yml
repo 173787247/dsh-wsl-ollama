@@ -1,0 +1,9 @@
+- insert:
+    - id: dsh-wsl-ollama
+      name: dsh-wsl-ollama
+      config:
+        enabled: true
+        baseUrl: "http://127.0.0.1:11434"
+        defaultModel: ""
+        timeoutMs: 120000
+        maxPromptChars: 32000
